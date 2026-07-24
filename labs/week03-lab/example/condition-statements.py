@@ -1,6 +1,6 @@
 # Simple if statement
 age = int(input("Enter your age: "))
-if age >= 18:
+if age >= 18: #age มากกว่าเท่ากับ 18 ใช้ไหม
     print("You are an adult")
 
 # if-else statement

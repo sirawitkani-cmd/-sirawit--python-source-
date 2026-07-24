@@ -21,7 +21,7 @@ for i in range(0, 11, 2):  # 0, 2, 4, 6, 8, 10
 print("\nLoop ผ่าน string:")
 name = "Python"
 for letter in name:
-    print(f"ตัวอักษร: {letter}")
+    print(f"ตัวอักษร: {letter}") #####
 
 print("\nLoop ผ่าน list:")
 fruits = ["apple", "banana", "orange"]
