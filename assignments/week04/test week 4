@@ -1,0 +1,7 @@
+#รับ ชื่อจริงหรือข้อความจากผู้ใช้
+# รับจำนวนสระทั้งหมด[a e i o u A E I O U]
+#ตัวอย่างหน้าเจอ
+# what is your name
+# tour text have 4 vowels
+
+name = int(input("ชื่อ"))
