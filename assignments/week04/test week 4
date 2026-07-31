@@ -4,4 +4,41 @@
 # what is your name
 # tour text have 4 vowels
 
-name = int(input("ชื่อ"))
+name = int(input("what name"))
+letters = list("name")
+print(letters)
+
+a = letters.count('a')
+e = letters.count('e')
+i = letters.count('i')
+o = letters.count('o')
+u = letters.count('u')
+
+A = letters.count('A')
+E = letters.count('E')
+I = letters.count('I')
+O = letters.count('O')
+U = letters.count('U')
+
+count = a + e + i + o + u + A + E + I + O + U
+print("your text name", count, "vowels")
+
+#อีกวิธี
+count = 0
+for letters in name:
+    if letter == 'a' or letter =='A':
+        count = count + 1
+    elif letter == 'e' or letter =='E':
+        count = count + 1
+    elif letter == 'i' or letter =='I':
+        count = count + 1
+    elif letter == 'o' or letter =='O':
+        count = count + 1
+    elif letter == 'u' or letter =='U':
+        count = count + 1
+
+count = 0
+for letter in name:
+    if letter in [ 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' ]
+        count = count + 1
+print("your text name", count, "vowels")
