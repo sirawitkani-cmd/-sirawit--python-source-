@@ -25,8 +25,29 @@ def calculate_circle(radius):
 รับ parameters: username (จำเป็น), age (ค่าเริ่มต้น 18), premium (ค่าเริ่มต้น False)
 return string ที่จัดรูปแบบข้อมูลผู้ใช้
 รูปแบบ: "[username] (age: [age]) - [Premium User / Standard User]"
+อย่าลืมเขียน program ในส่วนการทดลองใช้งาน
+
+def create_user_profile(username, age=18, premium=False)
+    user_type = "standard"
+
+    if premium == ture:
+        user_type = "Premium"
+
+    return f"{username} (age:{18}) - {user_type}"
+    print(create_user_proflie(("Heart",71))
+    print(create_user_proflie(("koko",))
+    print(create_user_proflie(("niji",71,turn))
+
+
 
 """
+
+
+
+
+
+
+
 
 def create_user_profile(username, age=18, premium=False):
     # Your Problem 3 solution
