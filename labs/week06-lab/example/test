@@ -1,0 +1,15 @@
+#เขียน fumction แปลงหน่วยสกุล ที่สามารถแปลงเงินจาก
+#THB<->USB...1USB=32THB
+#THB<->JPY...100JPY=22THB
+#โดยใช้ชื่อและการใช้งาน
+#function convert_currency(100,USD)
+#แสดงผลหน้าเจอ 100 THB = 3.3 USD
+
+def convert_currency(a,b)
+    if b == "USD"
+        print(f"{a} THB = {a/ 32.0} USD")
+    else:
+        print(a "USD = ", a* 32.0 "THB")
+#แปลงเงิน
+convert_currency(100, "USD")
+convert_currency(100, "THB")
