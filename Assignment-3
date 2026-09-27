@@ -1,0 +1,30 @@
+def deposit(money):
+    balance = 1000 
+    
+    try:
+
+        amount = float(money)
+        
+        if amount <= 0:
+            raise ValueError("จำนวนเงินฝากต้องมากกว่า 0")
+            
+    except ValueError as e:
+        if "could not convert" in str(e) or "invalid literal" in str(e):
+            print("\nเกิดข้อผิดพลาด: กรุณากรอกจำนวนเงินเป็นตัวเลขเท่านั้น")
+        else:
+            print(f"\nเกิดข้อผิดพลาด: {e}")
+            
+    else:
+        balance += amount
+        print("\nฝากเงินสำเร็จ")
+        print(f"ยอดเงินคงเหลือ: {balance:.2f} บาท")
+        
+    finally:
+        print("สิ้นสุดรายการฝากเงิน\n")
+
+if __name__ == "__main__":
+    print("ยอดเงินเริ่มต้น: 1000 บาท")
+    
+    user_input = input("กรอกจำนวนเงินที่ต้องการฝาก: ")
+    
+    deposit(user_input)
