@@ -37,7 +37,7 @@ class BankAccount:
         else:
             return "No transactions yet"
 
-# Example usage
+# Example usage การสร้างวัตถุจากคลาส
 account = BankAccount("John Doe", 1000)
 print(account.get_balance())
 print(account.deposit(500))

@@ -29,12 +29,12 @@ class BankAccount:
     @property
     def transaction_history(self):
         return self.__transaction_history.copy()
-    
+    #การเขียน __str__(self): คืนการปริ้นวัตถุ
     def __str__(self):
         return f"Account {self.account_number}: Balance ${self.__balance}"
 
 # Usage example
-account = BankAccount("12345", 1000)
+account = BankAccount("12345", 1000) #สร้างวัตุชื่อaccount
 print(account.get_balance())  # 1000
 account.deposit(500)
 account.withdraw(200)
